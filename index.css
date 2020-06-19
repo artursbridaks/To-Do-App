@@ -1,0 +1,115 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  background: rgb(120, 232, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(87, 255, 129, 0.678) 0%,
+    rgba(139, 251, 255, 0.562) 52%,
+    rgba(194, 141, 255, 0.486) 100%
+  );
+  overflow: hidden;
+}
+
+#header {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#input {
+  min-height: -10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#input:hover {
+  color: rgb(0, 134, 158);
+  font-weight: bold;
+}
+
+::placeholder {
+  color: rgb(4, 184, 216);
+  opacity: 1;
+}
+
+#item {
+  width: 40vh;
+  height: 5vh;
+  border-radius: 10px;
+  border: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+#submit {
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+#to-do {
+  min-height: 20vh;
+  position: relative;
+  right: 1.5%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+#to-do li {
+  background: #ffe15a;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+#to-do li:hover {
+  background: #fddb44;
+}
+#clear {
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+#clear:hover {
+  background-color: red;
+}
+
+li {
+  cursor: pointer;
+}
+
+.hidden-text {
+  display: none;
+}
+
+#text1{
+    color: rgb(36, 105, 255);
+    font-size: 14px;
+}
+
+#text2{
+    font-size: 16px;
+}
+
+.top:hover .hidden-text {
+  display: inline;
+  position: absolute;
+  top: 8%;
+  left: 58%;
+}
